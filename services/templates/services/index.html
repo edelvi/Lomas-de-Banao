@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block nav-index %}<strong class="active">Inicio</strong>{% endblock %}
+
+{% block body %}
+
+    {% include "beginning_index.html" %}
+    {% include "activities_tem.html" %}
+    {% include "benefits_tem.html" %}
+    {% include "protection_tem.html" %}
+    {% include "pricing_tem.html" %}
+    {% include "testimony_tem.html" %}
+    {% include "counter_tem.html" %}
+    {% include "gallery_tem.html" %}
+
+{% endblock %}

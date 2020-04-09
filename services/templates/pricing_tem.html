@@ -1,0 +1,194 @@
+<!--  Pricing section -->
+    <section class="ftco-section" id="pricing">
+	   <div class="container-fluid px-md-5">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-12 heading-section ftco-animate text-center">
+				<h3 class="subheading">Información</h3>
+				<h2 class="mb-1">Servicios</h2>
+			</div>
+		</div>
+		<div class="row align-items-center">
+			<div class="col-lg-4">
+				<div class="row no-gutters">
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div
+							class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-horse-ride"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Excursión en mulos a La Sabina</h3>
+								<p>Emocionante aventura donde estará en total contacto con la naturaleza.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-river"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Visita a la cascada Cortinas Blancas</h3>
+								<p>Podrá conocer y disfrutar de una cascada inigualable.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-address"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Visita a la casa de Maria Antonia</h3>
+								<p>Conozca acerca de la historia de la región, visitando esta casa museo.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="treatment w-100 text-center ftco-animate border p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-donkey"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Excursión en mulos al Naranjal</h3>
+								<p>Toda una aventura donde podrá observar la exuberancia de la flora y la fauna de
+									nuestra reserva.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    
+        
+        <!--  Pricing table -->
+        <div class="col-lg-4 d-flex align-items-stretch">
+				<div id="accordion" class="myaccordion w-100 text-center py-5 px-1 px-md-4">
+					<div>
+						<h3>Precios (CUC)</h3>
+						<p>Conozca los precios de los servicios que ofrece nuestra empresa</p>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button class="d-flex align-items-center justify-content-between btn btn-link"
+									data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+									aria-controls="collapseOne">
+									Pasadía
+									<i class="fa" aria-hidden="true"></i>
+								</button>
+							</h2>
+						</div>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+							data-parent="#accordion">
+							<div class="card-body text-left">
+								<ul>
+                                    {% for objeto in object %}
+									{% if objeto.modality == 'Pasadía' %}
+										<li class="d-flex">
+                                        	<span>{{ objeto.name}}</span>
+                                        	<span class="ml-auto p-2">{{ objeto.price}}</span>
+										</li>
+									{% endif %}
+									
+                                    {% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button
+									class="d-flex align-items-center justify-content-between btn btn-link collapsed"
+									data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+									aria-controls="collapseTwo">
+									Over Night
+									<i class="fa" aria-hidden="true"></i>
+								</button>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+							data-parent="#accordion">
+							<div class="card-body text-left">
+								<ul>
+
+                                    {% for objeto in object %}
+									{% if objeto.modality == 'Over Night' %}
+										<li class="d-flex">
+                                        	<span>{{ objeto.name}}</span>
+                                        	<span class="ml-auto p-2">{{ objeto.price}}</span>
+										</li>
+									{% endif %}
+									
+                                    {% endfor %}
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- END Pricing table -->
+
+            <div class="col-lg-4">
+				<div class="row no-gutters">
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div
+							class="treatment w-100 text-center ftco-animate border border-right-0 border-bottom-0 p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-bed"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Noche en la Sabina</h3>
+								<p>Disfrute de una noche rodeado de naturaleza y de la tranquilidad ineludible que trasmite la
+								Sabina.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="treatment w-100 text-center ftco-animate border border-bottom-0 p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-hotel"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Noche en Jarico</h3>
+								<p>Pase una noche más tranquila disfrutando de unas
+								 habitaciones que estarán habilitadas con todas las comodidades.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="treatment w-100 text-center ftco-animate border border-right-0 p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-pig-1"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Cerdo asado</h3>
+								<p>Delicioso almurezo tradicional cubano que se servirá acompañado de arroz moro y
+									biandas.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div class="treatment w-100 text-center ftco-animate border p-3 py-4">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="flaticon-soda"></span>
+							</div>
+							<div class="text mt-2">
+								<h3>Refrigerios</h3>
+								<p>En nuestra cafetería podrá encontrar distintas bebidas como: refrescos gaseados,
+									café expreso,
+									jugos naturales, entre otros.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</section>
+	<!-- END Pricing section -->

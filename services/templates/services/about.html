@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block nav-about %}<strong class="active">Acerca</strong>{% endblock %}
+
+
+{% block body %}
+    {% include "beginning_tem.html" %} 
+    {% include "activities_tem.html" %}
+    {% include "benefits_tem.html" %}
+    {% include "protection_tem.html" %}
+    {% include "testimony_tem.html" %}
+    {% include "counter_tem.html" %}
+    {% include "gallery_tem.html" %}
+{% endblock %}
+
+{% block section_name %}
+    <h1 class="mb-3 bread">Acerca</h1>
+{% endblock %}
